@@ -3,7 +3,6 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
-
 /*---------------------------------
      Nav Bar 
 ---------------------------------*/
@@ -11,16 +10,13 @@ body {
     background-color: black;
     margin: 0;
 }
-
 #logo {
     height: 80px;
     width: 120px;
 }
-
 #searchbar {
-    width: 220px;
+    width: 300px;
 }
-
 #search {
     position: absolute;
     right: 80px;
@@ -28,96 +24,69 @@ body {
 .navbar .navbar-toggle {
     left: 20px;    
 }
-
-
-/*--------------------------------------
-    Dropdown Menu
---------------------------------------*/
-.sidebar {
+.sidebar {                /*Dropdown Menu*/
     position: fixed;
-    top: 110px;
-    right: -450px;
+    top: 110px; right: -450px;
     background: black;
-    width: 450px;
-    height: 700px;
+    width: 450px; height: 700px;
     transition: .5s;
 }
-
 .active {
     right: 0px;
 }
-
 .sidebar ul {
     margin: 0;
     padding: 40px 10px;
 }
-
 .sidebar ul li {
     list-style: none;
 }
-
 .sidebar ul li a {
     padding: 20px 20px 20px 40px;
     color: white;
     display: block;
-    font-family: cursive;
-    font-size: 30px;
+    font-family: cursive; font-size: 30px;
     text-decoration: none;
 }
-
 .sidebar ul li a:hover,
 .sidebar ul li a.highlight {
     color: red;
 }
-
 ul li .borderline {
     content: "";
-    width: 400px;
-    height: 3px;
+    width: 400px; height: 3px;
     background: linear-gradient(to right, rgba(102,102,102,0) 0%, rgb(102,102,102,1) 100%);
 }
-
 .sidebarBtn {
     position: fixed;
-    top: 30px;
-    right: 15px;
-    width: 47px;
-    height: 50px;
+    top: 30px; right: 15px;
+    width: 47px; height: 50px;
     box-sizing: border-box;
     background: black;
     border: none;
 }
-
 .sidebarBtn span {
     display: block;
-    width: 35px;
-    height: 3px;
+    width: 35px; height: 3px;
     background: white;
     position: absolute;
     top: 23px;
     transition: .5s;
 }
-
 .sidebarBtn span:before {
     content: '';
     position: absolute;
-    top: -12px;
-    left: 0;
-    width: 100%;
-    height: 3px;
+    top: -12px; left: 0;
+    width: 100%; height: 3px;
     background: white
 }
-
 .sidebarBtn span:after {
     content: '';
     position: absolute;
-    top: 12px;
-    left: 0;
-    width: 100%;
-    height: 3px;
+    top: 12px; left: 0;
+    width: 100%; height: 3px;
     background: white;
 }
-
 .sidebarBtn.toggle span {
     background: transparent;
 }
@@ -130,7 +99,7 @@ ul li .borderline {
     top: 0;
     transform: rotate(-45deg);
     background: red;
-}
+} /*Nav Bar End */
 /*-------------------------------------
     Main Carousel 
 -------------------------------------*/
@@ -163,40 +132,36 @@ ul li .borderline {
     background: url('../images/hybrid.jpg') top center no-repeat;
     background-size: 100% 100%;
 }
-
-
 /*-------------------------------------
     3 Column Article
 -------------------------------------*/
 #featuresheading {
-    margin: 140px 0px 10px  10px;
+    padding: 110px 20px 10px 20px;
 }
-
+#featuresheading p {
+    text-align: justify;
+    font-size: 20px;
+}
 #titlered {
     color: red;
 }
-
 #features {
     width: 100%;
     margin: auto;
     margin-bottom: 20px;
     text-align: center;
 }
-
 #features .panel-heading {
     background: black;
     color: white;
 }
-
 #features img {
     width: 100%;
     margin: 10px 0px 20px 0px;;
-
 }
 #features .btn {
     text-decoration: none;
 }
-
 /*-----------------------------------
     Tabs Section
 ------------------------------------*/
@@ -213,7 +178,6 @@ ul li .borderline {
     text-align: justify;
     padding: 50px 15px 50px 15px;
 }
-
 /*------------------------------------
     Browse Content Section
 ------------------------------------*/
@@ -230,7 +194,6 @@ ul li .borderline {
     text-align: center; 
     padding: 15px 5px;
 }
-
 /*-----------------------------------
     Top 5 Article
 ------------------------------------*/
@@ -239,14 +202,34 @@ ul li .borderline {
     margin: auto;
 }
 #topfive #topfivehead {
-    margin: 0px 0px 20px 0px;
+    padding: 0px 10px 20px 10px;
 }
 #topfive a img {
     height: 80%;
     width: 80%;
 }
-.col-sm-4 {padding-bottom: 20px;}
-.col-sm-8 {padding-bottom: 40px;}
+.col-sm-4 {
+    padding-bottom: 20px;}
+.col-sm-8 {
+    padding-bottom: 40px;}
+
+/*Well Page 2*/
+#working h2 {
+    padding: 10px 0px 20px 0px;    
+}
+hr {
+    background: black;
+    width: 100%; height: 2px;
+    margin: auto;
+}
+#gifimage {
+    width: 100%; height: 100%;
+    padding: 10px 0px 30px 0px;
+}
+#hybridworking .col-sm-6 p {
+    padding-top: 10px;
+    text-align: justify;
+}
 /*------------------------------------
     Footer
 ------------------------------------*/
@@ -255,33 +238,25 @@ footer {
     color: white;
     padding: 20px 20px 30px 20px;
 }
-
 footer .col-sm-2 {
     padding: 0px 0px 20px 20px;
 }
-
 footer .row {
     width: 100%;
 }
-
 footer .socialimg {
     width: 30px;
     height: 30px;
     border-radius: 10px;
 }
-
 footer h4 {
     padding: 0px 0px 20px 5px;
 }
-
 footer a {
     padding: 10px 10px;
 }
-
-
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
-    
     .sidebar {
         right: -250px;
         width: 250px;
@@ -299,15 +274,12 @@ footer a {
     #search {
         right: 25px;
     }
-
     .sidebar ul li a {
         font-size: 15px;
     }
-
     ul li .borderline {
         width: 20px 0px;
     }
-
     #maincarousel .carousel-inner .item {
         height: 150px;
     }
@@ -330,10 +302,8 @@ footer a {
         background-size: 100% 100%;
     }
 }
-
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-
     .sidebar ul {
         margin: 0;
         padding: 110px 10px;
@@ -347,7 +317,6 @@ footer a {
     #search {
         right: 50px;
     }
-
     #maincarousel .item {
         height: 300px;
     }
@@ -370,7 +339,6 @@ footer a {
         background-size: 100% 100%;
     }
 }
-
 /* Large desktop */
 @media (min-width: 1200px) {
     #maincarousel .item {
