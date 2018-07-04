@@ -1,0 +1,326 @@
+body {
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/*---------------------------------
+     Nav Bar 
+---------------------------------*/
+.navbar {
+    background-color: black;
+    margin: 0;
+}
+
+#logo {
+    height: 80px;
+    width: 120px;
+}
+
+#searchbar {
+    width: 220px;
+}
+
+#search {
+    position: absolute;
+    right: 80px;
+}
+
+
+/*--------------------------------------
+    Dropdown Menu
+--------------------------------------*/
+.sidebar {
+    position: fixed;
+    top: 110px;
+    right: -450px;
+    background: black;
+    width: 450px;
+    height: 700px;
+    transition: .5s;
+}
+
+.active {
+    right: 0px;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 40px 10px;
+}
+
+.sidebar ul li {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    padding: 20px 20px 20px 40px;
+    color: white;
+    display: block;
+    font-family: cursive;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.highlight {
+    color: red;
+}
+
+ul li .borderline {
+    content: "";
+    width: 400px;
+    height: 3px;
+    background: linear-gradient(to right, rgba(102,102,102,0) 0%, rgb(102,102,102,1) 100%);
+}
+
+.sidebarBtn {
+    position: fixed;
+    top: 30px;
+    right: 15px;
+    width: 47px;
+    height: 50px;
+    box-sizing: border-box;
+    background: black;
+    border: none;
+}
+
+.sidebarBtn span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: white;
+    position: absolute;
+    top: 23px;
+    transition: .5s;
+}
+
+.sidebarBtn span:before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: white
+}
+
+.sidebarBtn span:after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: white;
+}
+
+.sidebarBtn.toggle span {
+    background: transparent;
+}
+.sidebarBtn.toggle span:before {
+    top: 0;
+    transform: rotate(45deg);
+    background: red;
+}
+.sidebarBtn.toggle span:after {
+    top: 0;
+    transform: rotate(-45deg);
+    background: red;
+}
+
+
+
+/*-------------------------------------
+    Main Carousel 
+-------------------------------------*/
+#maincarousel {
+    top: 110px;
+}
+.carousel-caption {
+    font-size: 24px;
+}
+.carousel-caption h4 a {
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+}
+#slide2 .carousel-caption h4 a {
+    color: black;
+}
+#maincarousel .item {
+    height: 480px;
+}
+#slide1 {
+    background: url('../images/terzowide.jpg') top center no-repeat;
+    background-size: 100%;
+}
+#slide2 {
+    background: url('../images/porsche918.jpg') top center no-repeat;
+    background-size: 100%;
+}
+#slide3 {
+    background: url('../images/hybrid.jpg') top center no-repeat;
+    background-size: 100%;
+}
+
+
+/*-------------------------------------
+    3 Column Article
+-------------------------------------*/
+#featuresheading {
+    margin: 130px 0px 10px 0px;
+}
+
+#features {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#features .panel-heading {
+    background: black;
+    color: white;
+}
+
+#features img {
+    width: 100%;
+    margin: 10px 0px 20px 0px;;
+
+}
+
+/*-----------------------------------
+    Tabs Section
+------------------------------------*/
+#tabssection {
+    margin: 0px 20px 20px 20px;
+}
+#tabssection .tab-content {
+    width: 100%;
+}
+
+/*------------------------------------
+    Footer
+------------------------------------*/
+footer {
+    background: black;
+    color: white;
+    padding: 20px 20px;
+}
+
+footer .col-sm-2 {
+    padding: 0px 0px 20px 20px;
+}
+
+footer .row {
+    width: 100%;
+}
+
+footer .socialimg {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+footer h4 {
+    padding: 0px 0px 20px 5px;
+}
+
+footer a {
+    padding: 10px 10px;
+}
+
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+    
+    .sidebar {
+        right: -250px;
+        width: 250px;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .sidebar ul li a {
+        font-size: 15px;
+    }
+
+    ul li .borderline {
+        width: 20   0px;
+    }
+
+    #maincarousel .carousel-inner .item {
+        height: 150px;
+    }
+    #slide1 {
+        background: url('../images/terzowide_small.jpg') top center no-repeat;
+    }
+    #slide2 {
+        background: url('../images/porsche_small.jpg') top center no-repeat;
+    }
+    #slide3 {
+        background: url('../images/hybrid.jpg') top center no-repeat;
+    }
+    .carousel-caption p {
+        font-size: 10px;
+    }
+    .carousel-caption h4 a {
+        font-size: 12px;
+    }
+	#slide1, #slide2, #slide3 {
+        background-size: 100%;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    #maincarousel .item {
+        height: 300px;
+    }
+    #slide1 {
+        background: url('../images/terzowide_medium.jpg') top center no-repeat;
+    }
+    #slide2 {
+        background: url('../images/porsche_medium.jpg') top center no-repeat;
+    }
+    #slide3 {
+        background: url('../images/hybrid.jpg') top center no-repeat;
+    }
+    .carousel-caption {
+        font-size: 10px;
+    }
+    .carousel-caption h4 {
+        font-size: 16px;
+    }
+	#slide1, #slide2, #slide3 {
+        background-size: 100%;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    #maincarousel .item {
+        height: 580px;
+    }
+    #slide1 {
+        background: url('../images/terzowide.jpg') top center no-repeat;
+    }
+    #slide2 {
+        background: url('../images/porsche918.jpg') top center no-repeat;
+    }
+    #slide3 {
+        background: url('../images/hybrid.jpg') top center no-repeat;
+    }
+    #slide1, #slide2, #slide3 {
+        background-size: 100%;
+    }
+}
+
+
+
+
+
+
+

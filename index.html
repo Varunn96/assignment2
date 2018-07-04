@@ -1,0 +1,339 @@
+<!doctype html>
+<!-- html starts -->
+<html>
+
+<!-- Defining Title of Webpage, mobile support, bootstrap, google fonts, linking html file to stylesheets -->
+<!-- head starts -->
+<head>
+    <meta charset="utf-8" />
+    <!-- Title -->
+    <title> HYBRID | Homepage </title>
+    <!-- Mobile-device support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="cssfolder/stylesheet.css" type="text/css">
+    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sidebarBtn').click(function(){
+                $('.sidebar').toggleClass('active');
+                $('.sidebarBtn').toggleClass('toggle');
+            })
+        })
+    </script>
+</head>
+<!-- head ends -->
+
+<!-- Defining the content of the Webpage (Homepage) -->
+<!-- Body starts -->
+<body>
+
+    <!-- Main container start -->
+    <section class="container-fluid" id="main">
+
+        <!-- Navbar starts -->
+        <nav class="navbar navbar-fixed-top">
+
+            <!-- Button for collapsing search bar -->
+            <!-- <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse">
+                    <span class="glyphicon glyphicon-search"></span>
+            </button> -->
+            <!-- Button for collapsing search bar end -->
+
+            <!-- Navigation dropdown menu start -->
+            <nav class="sidebar">
+                <!-- List of items -->
+                <ul>
+                    <li> 
+                        <a href="#" class="highlight"> <em>Home</em> </a>
+                        <div class="borderline"></div>
+                    </li>
+                    <li> 
+                        <a href="#"> <em>Technology</em> </a>
+                        <div class="borderline"></div>
+                    </li>
+                    <li> 
+                        <a href="#"> <em>Vehicles</em> </a>
+                        <div class="borderline"></div>
+                    </li>
+                    <li> 
+                        <a href="#"> <em>Future</em> </a>
+                        <div class="borderline"></div>
+                    </li>
+                    <li> 
+                        <a href="#"> <em>Subscribe</em> </a>
+                        <div class="borderline"></div>
+                    </li>
+                </ul>
+                <!-- List ends -->
+
+                <!-- Sidebar button start -->
+                <button class="sidebarBtn" class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse">
+                    <span></span>
+                </button>
+                <!-- Sidebar button end -->
+            </nav>
+            <!-- Navigation dropdown menu end -->
+
+            <!-- logo -->
+            <a class="navbar-brand" href="#"> 
+                <img src="images/logo2-cpy.JPG" id="logo" alt="Our Logo">
+            </a>
+            <!-- logo end -->
+
+            <!-- Collapsing Search bar -->
+            <section class="nav-collapse collapse navbar-responsive-collapse" id="search">    
+                <form class="navbar-form"> 
+                    <input type="text" class="form-control" placeholder="Search" id="searchbar">
+                    <buttom type="submit" class="btn btn-default btn-mini"> <span class="glyphicon glyphicon-search"></span></buttom>
+                </form>
+            </section>
+            <!-- Collapsing Seacrch Bar end --> 
+                
+        </nav>
+        <!-- Navbar ends -->
+
+        <!-- Main Carousel starts -->
+        <section class="carousel slide" id="maincarousel">
+
+            <!-- Indicators -->
+	        <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#maincarousel"></li>
+                <li data-slide-to="1" data-target="#maincarousel"></li>
+                <li data-slide-to="2" data-target="#maincarousel"></li>
+            </ol>
+    
+            <!-- Wrapper for slides -->
+            <section class="carousel-inner">
+                <article class="item active" id="slide1">
+                    <article class="carousel-caption">
+                        <h4> <a href="#"><em>The Terzo Millenio</em></a> </h4>
+                        <p> <em>The latest Hybrid Hypercar Concept from Lamborghini</em> </p>
+                    </article><!-- end carousel-caption-->
+                </article><!-- end item -->
+            
+                <article class="item" id="slide2">
+                    <article class="carousel-caption">
+                        <h4> <a href="#">Take a look inside Porsche 918's Hybrid Powertrain System</a> </h4>
+                    </article><!-- end carousel-caption-->
+                </article><!-- end item -->
+            
+                <article class="item" id="slide3">
+                    <article class="carousel-caption">
+                        <h4> <a href="#">Lexus develops new Powertrain for its Hybrid Supercars</a> </h4>
+                    </article><!-- end carousel-caption-->
+                </article><!-- end item -->
+            </section><!-- carousel-inner -->
+        
+            <!-- Controls -->
+            <a class="left carousel-control" data-slide="prev" href="#maincarousel"><span class="icon-prev"></span></a>
+            <a class="right carousel-control" data-slide="next" href="#maincarousel"><span class="icon-next"></span></a>
+    
+        </section>
+        <!-- Main Carousel ends -->
+
+        <!-- Three column article starts -->
+        <!-- Article Heading -->
+        <article class="row" id="featuresheading">
+            <!-- col-12 start -->
+            <article class="col-12">
+                <h2> <strong><em> The Holy Trinity </em></strong></h2>
+                <p class="lead"> The three beasts which represent the pinnacle of Hybrid Technology are often collectively
+                        reffered to as "The Holy Trinity" of HyperCars. It’s almost impossible to talk about the one of them without comparing and contrasting with the other two. </p>
+            </article>
+            <!-- col-12 end -->
+        </article>
+        <!-- Article Heading end -->    
+            
+        <section class="row" id="features">
+            <section class="col-sm-4 feature">
+                <section class="panel">
+                    <section class="panel-heading">
+                        <h3 class="panel-title"> <strong>Ferrari Laferrari</strong> </h3>
+                    </section><!-- panel-heading end -->
+                    <img src="images/lafpowerslide.gif" alt="Laferrari" class="img-circle">
+                    
+                    <p> The Ferrari Laferrari - The definitive Ferrari with 499 examples and 1 special edition around the world and a price tag of over One Million Dollars. </p>
+                    
+                    <a href="#" class="btn btn-secondary "> Read more </a>
+                </section><!-- panel end -->
+            </section><!-- feature end -->
+            
+            <section class="col-sm-4 feature">
+                <section class="panel">
+                    <section class="panel-heading">
+                        <h3 class="panel-title"> <strong> McLaren P1 </strong></h3>
+                    </section><!-- panel-heading end -->
+                    <img src="images/p1powerslide.gif" alt="McLaren P1" class="img-circle">
+                    
+                    <p> The ultimate expression of McLaren's engineering. A plug-in hybrid that will take you from 0 to 60 miles an hour before you can say swoosh! </p>
+                    
+                    <a href="#" class="btn btn-secondary "> Read more </a>
+                </section><!-- panel end -->
+            </section><!-- feature end -->
+            
+            <section class="col-sm-4 feature">
+                <section class="panel">
+                    <section class="panel-heading">
+                        <h3 class="panel-title"><strong> Porsche 918 </strong></h3>
+                    </section><!-- end panel-heading -->
+                    <img src="images/918powerslide.gif" alt="Porsche 918" class="img-circle">
+                    
+                    <p> The flagship Porsche - Lapping the Nurburgring Norsschleife in 6 minutes and 57 seconds, which was faster than any road legal production car then. </p>
+                    
+                    <a href="#" class="btn btn-secondary "> Read more </a>
+                </section><!-- panel end -->
+            </section><!-- feature end -->
+        </section><!-- features end -->         
+        <!-- Three column article ends -->
+
+        
+        <section class="row" id="tabssection">
+            <section class="col-sm-12"></section>
+            <h3> Famous Race Tracks around the world </h3>
+                <section class="tabbable">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">Nurburging Nordschleife</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Circuit de Spa-Francorchamps</a></li>
+                        <li><a href="#tab3" data-toggle="tab">Circuit de la Sarthe</a></li>
+                    </ul>
+                    <section class="tab-content">
+                        <section class="tab-pane active" id="tab1">
+                            <section class="row">
+                                <section class="col-sm-6">
+                                    <h4><span class="glyphicon glyphicon-map-marker"></span> Location <small> Country : Germany </small></h4>
+                        
+                                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2553.235492176084!2d6.940473815727178!3d50.334098079459494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sn%C3%BCrburgring+embedded+google+map!5e1!3m2!1sen!2sin!4v1530648794966"></iframe>
+                                </section>
+                                <section class="col-sm-6">
+                                    <p>The world's most beautiful racetrack, also known as the Green Hell. </p>
+                                    
+                                    <p>The Nürburgring is a 150,000 person capacity motorsports complex located in the town of Nürburg, Rhineland-Palatinate, Germany. It features a Grand Prix race track built in 1984, and a much longer old "North loop" track which was built in the 1920s around the village and medieval castle of Nürburg in the Eifel mountains. 
+                                    </p>
+                                    <p>
+                                    Several touring car series still compete on the Nordschleife, using either only the simple 20.8 km (12.9 mi) version with its separate small pit lane, or a combined 24.4 km (15.2 mi)-long track that uses a part of the original modern F1 track.
+                                    </p>
+                                </section>
+                            </section>
+                        </section>
+                        
+                        <section class="tab-pane" id="tab2">
+                            <section class="row">
+                                <section class="col-sm-6">
+                                    <h4><span class="glyphicon glyphicon-map-marker"></span> Location <small> Country : Belgium </small></h4>
+                        
+                                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.5085742805695!2d5.96986131573091!3d50.4369117794735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c07b5c0460f737%3A0x78105e8819c35c0e!2sCircuit+de+Spa-Francorchamps!5e1!3m2!1sen!2sin!4v1530648536808"></iframe>
+                                </section>
+                                <section class="col-sm-6">
+                                    <p>The world's most beautiful racetrack, also known as the Green Hell. </p>
+                                    
+                                    <p>The Nürburgring is a 150,000 person capacity motorsports complex located in the town of Nürburg, Rhineland-Palatinate, Germany. It features a Grand Prix race track built in 1984, and a much longer old "North loop" track which was built in the 1920s around the village and medieval castle of Nürburg in the Eifel mountains. 
+                                    </p>
+                                    <p>
+                                    Several touring car series still compete on the Nordschleife, using either only the simple 20.8 km (12.9 mi) version with its separate small pit lane, or a combined 24.4 km (15.2 mi)-long track that uses a part of the original modern F1 track.
+                                    </p>
+                                </section>
+                            </section>
+                        </section>
+
+                        <section class="tab-pane" id="tab3">
+                            <section class="row">
+                                <section class="col-sm-6">
+                                    <h4><span class="glyphicon glyphicon-map-marker"></span> Location <small> Country : France </small></h4>
+                        
+                                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d43041.31417008117!2d0.177291984639441!3d48.007459188944495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scircuit+de+le+sarta!5e1!3m2!1sen!2sin!4v1530648602386"></iframe>
+                                </section>
+                                <section class="col-sm-6">
+                                    <p>The world's most beautiful racetrack, also known as the Green Hell. </p>
+                                    
+                                    <p>The Nürburgring is a 150,000 person capacity motorsports complex located in the town of Nürburg, Rhineland-Palatinate, Germany. It features a Grand Prix race track built in 1984, and a much longer old "North loop" track which was built in the 1920s around the village and medieval castle of Nürburg in the Eifel mountains. 
+                                    </p>
+                                    <p>
+                                    Several touring car series still compete on the Nordschleife, using either only the simple 20.8 km (12.9 mi) version with its separate small pit lane, or a combined 24.4 km (15.2 mi)-long track that uses a part of the original modern F1 track.
+                                    </p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <!-- tab-content ends -->
+                </section>
+                <!-- tabbable ends -->
+            </section> 
+            <!-- col-sm-12 ends -->
+        </section>
+        <!-- Row ends -->
+
+
+
+    </section>
+    <!-- Main container ends -->
+
+    <!-- Footer starts-->
+    <footer>
+        <section class="row">
+            <section class="col-sm-12">
+                <h4> Follow Us </h4>
+            </section>
+        </section>
+
+        <section class="row">
+            <section class="col-sm-2">
+                <img src="images/fb.jpg" alt="Facebook" class="socialimg">
+                <a href="#"> Hybrid FBOfficial </a>
+            </section>
+
+            <section class="col-sm-2">
+                <img src="images/insta.jpg" alt="Instagram" class="socialimg">
+                <a href="#"> Hybrid IGOfficial </a>
+            </section>
+
+            <section class="col-sm-2">
+                <img src="images/yt.jpg" alt="Youtube" class="socialimg">
+                <a href="#"> Hybrid YT </a>
+            </section>
+
+            <section class="col-sm-2">
+                <img src="images/gplus.jpg" alt="Google Plus" class="socialimg">
+                <a href="#"> Hybrid </a>
+            </section>
+
+            <section class="col-sm-2">
+                <img src="images/twitter.jpg" alt="Twitter" class="socialimg">
+                <a href="#"> Hybrid Official </a>
+            </section>        
+
+            <section class="col-sm-2">
+                <img src="images/linkedin.png" alt="LinkedIn" class="socialimg">
+                <a href="#"> Hybrid </a>
+            </section>
+
+        </section>
+        
+        <section class="row">
+            <section class="col-sm-12">
+                <h8> <a href="#"> Copyright &copy; 2018 </a> | </h8>
+                <h8> <a href="#"> Privacy Policy </a> | </h8>
+                <h8> <a href="#"> Cookies Policy </a> | </h8>
+                <h8> <a href="#"> Contacts </a> | </h8>
+                <h8> <a href="#"> Media </a> | </h8>
+            </section>
+        </section>
+    </footer>
+    <!-- Footer ends -->
+
+<!-- Jquery script-->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+<!-- body ends -->
+</html>
+<!-- html ends -->
