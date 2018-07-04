@@ -25,6 +25,9 @@ body {
     position: absolute;
     right: 80px;
 }
+.navbar .navbar-toggle {
+    left: 20px;    
+}
 
 
 /*--------------------------------------
@@ -128,9 +131,6 @@ ul li .borderline {
     transform: rotate(-45deg);
     background: red;
 }
-
-
-
 /*-------------------------------------
     Main Carousel 
 -------------------------------------*/
@@ -153,15 +153,15 @@ ul li .borderline {
 }
 #slide1 {
     background: url('../images/terzowide.jpg') top center no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 #slide2 {
     background: url('../images/porsche918.jpg') top center no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 #slide3 {
     background: url('../images/hybrid.jpg') top center no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 
 
@@ -169,12 +169,17 @@ ul li .borderline {
     3 Column Article
 -------------------------------------*/
 #featuresheading {
-    margin: 130px 0px 10px 0px;
+    margin: 140px 0px 10px  10px;
+}
+
+#titlered {
+    color: red;
 }
 
 #features {
     width: 100%;
     margin: auto;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -188,24 +193,67 @@ ul li .borderline {
     margin: 10px 0px 20px 0px;;
 
 }
+#features .btn {
+    text-decoration: none;
+}
 
 /*-----------------------------------
     Tabs Section
 ------------------------------------*/
 #tabssection {
-    margin: 0px 20px 20px 20px;
+    margin: 20px 20px 40px 20px;
+}
+#tabssection h3 {
+    padding: 0px 0px 20px 0px;
 }
 #tabssection .tab-content {
     width: 100%;
 }
+#tabssection .tab-content #trackdata {
+    text-align: justify;
+    padding: 50px 15px 50px 15px;
+}
 
+/*------------------------------------
+    Browse Content Section
+------------------------------------*/
+#browsecontent {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#browsecontent p {
+    padding-bottom: 20px;
+}
+#browsecontent ul li {
+    list-style-type: none;
+    text-align: center; 
+    padding: 15px 5px;
+}
+
+/*-----------------------------------
+    Top 5 Article
+------------------------------------*/
+#topfive {
+    width: 100%;
+    margin: auto;
+}
+#topfive #topfivehead {
+    margin: 0px 0px 20px 0px;
+}
+#topfive a img {
+    height: 80%;
+    width: 80%;
+}
+.col-sm-4 {padding-bottom: 20px;}
+.col-sm-8 {padding-bottom: 40px;}
 /*------------------------------------
     Footer
 ------------------------------------*/
 footer {
     background: black;
     color: white;
-    padding: 20px 20px;
+    padding: 20px 20px 30px 20px;
 }
 
 footer .col-sm-2 {
@@ -238,9 +286,18 @@ footer a {
         right: -250px;
         width: 250px;
     }
-
+    .sidebar ul {
+        margin: 0;
+        padding: 100px 10px;
+    }
     .active {
         right: 0;
+    }
+    #searchbar {
+        width: 135px;
+    }
+    #search {
+        right: 25px;
     }
 
     .sidebar ul li a {
@@ -248,7 +305,7 @@ footer a {
     }
 
     ul li .borderline {
-        width: 20   0px;
+        width: 20px 0px;
     }
 
     #maincarousel .carousel-inner .item {
@@ -270,17 +327,32 @@ footer a {
         font-size: 12px;
     }
 	#slide1, #slide2, #slide3 {
-        background-size: 100%;
+        background-size: 100% 100%;
     }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+
+    .sidebar ul {
+        margin: 0;
+        padding: 110px 10px;
+    }
+    .sidebar ul li a {
+        font-size: 25px;
+    }
+    #searchbar {
+        width: 300px;
+    }
+    #search {
+        right: 50px;
+    }
+
     #maincarousel .item {
         height: 300px;
     }
     #slide1 {
-        background: url('../images/terzowide_medium.jpg') top center no-repeat;
+        background: url('../images/terzowide.jpg') top center no-repeat;
     }
     #slide2 {
         background: url('../images/porsche_medium.jpg') top center no-repeat;
@@ -295,14 +367,14 @@ footer a {
         font-size: 16px;
     }
 	#slide1, #slide2, #slide3 {
-        background-size: 100%;
+        background-size: 100% 100%;
     }
 }
 
 /* Large desktop */
 @media (min-width: 1200px) {
     #maincarousel .item {
-        height: 580px;
+        height: 680px;
     }
     #slide1 {
         background: url('../images/terzowide.jpg') top center no-repeat;
