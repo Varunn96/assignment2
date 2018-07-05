@@ -6,28 +6,20 @@
 <!-- head start -->
 
 <head>
-    <meta charset="utf-8" />
-    <!-- Title -->
-    <title> HYBRID | Technology </title>
-    <!-- Mobile-device support -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="cssfolder/stylesheet.css" type="text/css">
-    <script src="includes/js/modernizr-2.6.2.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.sidebarBtn').click(function () {
-                $('.sidebar').toggleClass('active');
-                $('.sidebarBtn').toggleClass('toggle');
-            })
-        })
-    </script>
+  <meta charset="utf-8" />
+  <!-- Title -->
+  <title> HYBRID | Technology </title>
+  <!-- Mobile-device support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- Bootstrap -->
+  <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/bootstrap-glyphicons.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="resources/css/stylesheet.css" type="text/css">
+  <script src="vendor/js/modernizr-2.6.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 </head>
 <!-- head end -->
 
@@ -36,233 +28,264 @@
 
 <body>
 
-    <!-- Main container start -->
-    <section class="container-fluid" id="main">
+  <!-- Main container start -->
+  <section class="container-fluid" id="main">
 
-        <!-- Navbar starts -->
-        <nav class="navbar navbar-fixed-top">
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-fixed-top">
 
-            <!-- Button for collapsing search bar -->
-            <!-- <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse">
+      <!-- Button for collapsing search bar -->
+      <!-- <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse">
                     <span class="glyphicon glyphicon-search"></span>
                 </button> -->
-            <!-- Button for collapsing search bar end -->
+      <!-- Button for collapsing search bar end -->
 
-            <!-- Navigation dropdown menu start -->
-            <nav class="sidebar">
-                <!-- List of items -->
-                <ul>
-                    <li>
-                        <div class="borderline"></div>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <em>Home</em>
-                        </a>
-                        <div class="borderline"></div>
-                    </li>
-                    <li>
-                        <a href="#" class="highlight">
-                            <em>Technology</em>
-                        </a>
-                        <div class="borderline"></div>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <em>Vehicles</em>
-                        </a>
-                        <div class="borderline"></div>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <em>Future</em>
-                        </a>
-                        <div class="borderline"></div>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <em>Subscribe</em>
-                        </a>
-                        <div class="borderline"></div>
-                    </li>
-                </ul>
-                <!-- List ends -->
-
-                <!-- Sidebar button start -->
-                <button class="sidebarBtn" class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse">
-                    <span></span>
-                </button>
-                <!-- Sidebar button end -->
-            </nav>
-            <!-- Navigation dropdown menu end -->
-
-            <!-- logo -->
-            <a class="navbar-brand" href="#">
-                <img src="images/logo2-cpy.JPG" id="logo" alt="Our Logo">
+      <!-- Navigation dropdown menu start -->
+      <nav class="sidebar">
+        <!-- List of items -->
+        <ul>
+          <li>
+            <div class="borderline"></div>
+          </li>
+          <li>
+            <a href="index.html">
+              <em>Home</em>
             </a>
-            <!-- logo end -->
+            <div class="borderline"></div>
+          </li>
+          <li>
+            <a href="#" class="highlight">
+              <em>Technology</em>
+            </a>
+            <div class="borderline"></div>
+          </li>
+          <li>
+            <a href="#">
+              <em>Vehicles</em>
+            </a>
+            <div class="borderline"></div>
+          </li>
+          <li>
+            <a href="#">
+              <em>Future</em>
+            </a>
+            <div class="borderline"></div>
+          </li>
+          <li>
+            <a href="#">
+              <em>Subscribe</em>
+            </a>
+            <div class="borderline"></div>
+          </li>
+        </ul>
+        <!-- List ends -->
 
-            <!-- Collapsing Search bar -->
-            <section class="nav-collapse collapse navbar-responsive-collapse" id="search">
-                <form class="navbar-form">
-                    <input type="text" class="form-control" placeholder="Search" id="searchbar">
-                    <buttom type="submit" class="btn btn-default btn-mini">
-                        <span class="glyphicon glyphicon-search"></span>
-                    </buttom>
-                </form>
-            </section>
-            <!-- Collapsing Seacrch Bar end -->
-        </nav>
-        <!-- Navbar ends -->
-    
-        <!-- About Hybrid section start -->
-        <section class="well"  id="featuresheading">
-            <h2> <strong><em>About <span id="titlered">Hybrid</span> Cars</em></strong></h2>
-            <p>A hybrid vehicle provides low emissions and high fuel economy by combining a gasoline-powered engine with an electric motor. It's an idea that's been around for a long time, but until Toyota and Honda brought out production models at the turn of the century, the hybrid automobile had never been part of the mainstream automotive landscape.</p>
-            <p>Toyota's third-generation Prius, which debuted for 2004, is credited with kick-starting the hybrid movement by providing 45 to 50 mpg with the room of a midsize car in a relatively compact footprint. Other carmakers, including BMW, Ford, Hyundai, Lexus and even Porsche, soon jumped onto the hybrid bandwagon.</p>
-            <p>There are now also plug-in hybrids, whose more powerful battery packs allow them to run solely under electric power for much higher speeds and for distances from about 20 to 50 miles. As the name suggests, they can be plugged into a home or a commercial charger. If you have a short enough commute, a plug-in hybrid can function largely as an electric car for much of the workweek.</p>
+        <!-- Sidebar button start -->
+        <button class="sidebarBtn" class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse">
+          <span></span>
+        </button>
+        <!-- Sidebar button end -->
+      </nav>
+      <!-- Navigation dropdown menu end -->
 
-            <!-- Hybrid working section start -->
-            <section id="working">
-                <h2 id="titlered"> <strong><em>Working</em></strong></h2>
-            </section>
+      <!-- logo -->
+      <a class="navbar-brand" href="#">
+        <img src="resources/images/logo2-cpy.JPG" id="logo" alt="Our Logo">
+      </a>
+      <!-- logo end -->
 
-            <section class="container" id="hybridworking">
-                <section class="row">
-                    <section class="col-sm-12"> 
-                        <h4> GETTING STARTED </h4>
-                        <hr>
-                    </section>
-                    <section class="col-sm-6">
-                        <img src="images/hybridgif.gif" alt="Hybrid Powertrain" id="gifimage">
-                    </section>
-                    <section class="col-sm-6">
-                        <p> Most Hybrids never need to be plugged in. They recover and generate power while you drive, automatically recharging the Hybrid battery. When you're ready to go, simply press the Power button, and your journey can begin.</p>
-                    </section>
-                </section>
-                <section class="row">
-                    <section class="col-sm-12"> 
-                        <h4> ACCELERATION </h4>
-                        <hr>
-                    </section>
-                    <section class="col-sm-6">
-                        <p> Hybrids are capable of operating with the gas engine only, electric motor only, or a seamless and extremely efficient combination of both. When you accelerate, the electric motor works on its own to drive the wheels. For rapid acceleration, or as you require more power to increase your speed, the gas engine assists the electric motor. </p>
-                    </section>
-                    <section class="col-sm-6">
-                        <img src="images/hybridgif2.gif" alt="Hybrid Powertrain" id="gifimage">
-                    </section>
-                </section>
-                <section class="row">
-                    <section class="col-sm-12"> 
-                        <h4> CRUISING </h4>
-                        <hr>
-                    </section>
-                    <section class="col-sm-6">
-                        <img src="images/hybridgif3.gif" alt="Hybrid Powertrain" id="gifimage">
-                    </section>
-                    <section class="col-sm-6">
-                        <p> A revolutionary Electronic Control Unit (ECU) controls the energy flow between the gas-powered combustion engine, advanced electric motor and high-capacity battery. When you reach your cruising speed, the power from the gas engine is split between the wheels and an electric generator that drives the electric motor. Excess energy used to recharge the Hybrid battery, minimizing energy waste.</p>
-                    </section>
-                </section>
-                <section class="row">
-                    <section class="col-sm-12"> 
-                        <h4> BRAKING </h4>
-                        <hr>
-                    </section>
-                    <section class="col-sm-6">
-                        <p> The gas engine switches off immediately, stopping the creation of CO2 emissions, when you take your foot off the gas pedal or press the brake pedal. In response, the electric generator creates resistance to reduce the vehicle cruising speed. The electricity generated by this resistance is redirected to recharge the Hybrid battery.</p>
-                    </section>
-                    <section class="col-sm-6">
-                        <img src="images/hybridgif4.gif" alt="Hybrid Powertrain" id="gifimage">
-                    </section>
-                </section>
-                <section class="row">
-                    <section class="col-sm-12"> 
-                        <h4> STOPPING </h4>
-                        <hr>
-                    </section>
-                    <section class="col-sm-6">
-                        <img src="images/hybridgif5.jpg" alt="Hybrid Powertrain" id="gifimage">
-                    </section>
-                    <section class="col-sm-6">
-                        <p> Stop - at a red light, for example. With only the electric motor active, a Hybrid system is silent and emits no emissions. If the Hybrid battery is running low, the gas engine intuitively starts, generating the energy required to replenish the battery. This is just one of the reasons that Hybrids are up to 70% cleaner than gas burning engines and diesels. </p>
-                    </section>
-                </section>
-            </section> 
-            <!-- Hybrid working section end -->
+      <!-- Collapsing Search bar -->
+      <section class="nav-collapse collapse navbar-responsive-collapse" id="search">
+        <form class="navbar-form">
+          <input type="text" class="form-control" placeholder="Search" id="searchbar">
+          <buttom type="submit" class="btn btn-default btn-mini">
+            <span class="glyphicon glyphicon-search"></span>
+          </buttom>
+        </form>
+      </section>
+      <!-- Collapsing Seacrch Bar end -->
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- About Hybrid section start -->
+    <section class="well" id="featuresheading">
+      <h2>
+        <strong>
+          <em>About
+            <span id="titlered">Hybrid</span> Cars</em>
+        </strong>
+      </h2>
+      <p>A hybrid vehicle provides low emissions and high fuel economy by combining a gasoline-powered engine with an electric
+        motor. It's an idea that's been around for a long time, but until Toyota and Honda brought out production models
+        at the turn of the century, the hybrid automobile had never been part of the mainstream automotive landscape.</p>
+      <p>Toyota's third-generation Prius, which debuted for 2004, is credited with kick-starting the hybrid movement by providing
+        45 to 50 mpg with the room of a midsize car in a relatively compact footprint. Other carmakers, including BMW, Ford,
+        Hyundai, Lexus and even Porsche, soon jumped onto the hybrid bandwagon.</p>
+      <p>There are now also plug-in hybrids, whose more powerful battery packs allow them to run solely under electric power
+        for much higher speeds and for distances from about 20 to 50 miles. As the name suggests, they can be plugged into
+        a home or a commercial charger. If you have a short enough commute, a plug-in hybrid can function largely as an electric
+        car for much of the workweek.</p>
+
+      <!-- Hybrid working section start -->
+      <section id="working">
+        <h2 id="titlered">
+          <strong>
+            <em>Working</em>
+          </strong>
+        </h2>
+      </section>
+
+      <section class="container" id="hybridworking">
+        <section class="row">
+          <section class="col-sm-12">
+            <h4> GETTING STARTED </h4>
+            <hr>
+          </section>
+          <section class="col-sm-6">
+            <img src="resources/images/hybridgif.gif" alt="Hybrid Powertrain" id="gifimage">
+          </section>
+          <section class="col-sm-6">
+            <p> Most Hybrids never need to be plugged in. They recover and generate power while you drive, automatically recharging
+              the Hybrid battery. When you're ready to go, simply press the Power button, and your journey can begin.</p>
+          </section>
         </section>
-        <!-- About hybrid section end -->
+        <section class="row">
+          <section class="col-sm-12">
+            <h4> ACCELERATION </h4>
+            <hr>
+          </section>
+          <section class="col-sm-6">
+            <p> Hybrids are capable of operating with the gas engine only, electric motor only, or a seamless and extremely efficient
+              combination of both. When you accelerate, the electric motor works on its own to drive the wheels. For rapid
+              acceleration, or as you require more power to increase your speed, the gas engine assists the electric motor.
+              </p>
+          </section>
+          <section class="col-sm-6">
+            <img src="resources/images/hybridgif2.gif" alt="Hybrid Powertrain" id="gifimage">
+          </section>
+        </section>
+        <section class="row">
+          <section class="col-sm-12">
+            <h4> CRUISING </h4>
+            <hr>
+          </section>
+          <section class="col-sm-6">
+            <img src="resources/images/hybridgif3.gif" alt="Hybrid Powertrain" id="gifimage">
+          </section>
+          <section class="col-sm-6">
+            <p> A revolutionary Electronic Control Unit (ECU) controls the energy flow between the gas-powered combustion engine,
+              advanced electric motor and high-capacity battery. When you reach your cruising speed, the power from the gas
+              engine is split between the wheels and an electric generator that drives the electric motor. Excess energy
+              used to recharge the Hybrid battery, minimizing energy waste.</p>
+          </section>
+        </section>
+        <section class="row">
+          <section class="col-sm-12">
+            <h4> BRAKING </h4>
+            <hr>
+          </section>
+          <section class="col-sm-6">
+            <p> The gas engine switches off immediately, stopping the creation of CO2 emissions, when you take your foot off
+              the gas pedal or press the brake pedal. In response, the electric generator creates resistance to reduce the
+              vehicle cruising speed. The electricity generated by this resistance is redirected to recharge the Hybrid battery.</p>
+          </section>
+          <section class="col-sm-6">
+            <img src="resources/images/hybridgif4.gif" alt="Hybrid Powertrain" id="gifimage">
+          </section>
+        </section>
+        <section class="row">
+          <section class="col-sm-12">
+            <h4> STOPPING </h4>
+            <hr>
+          </section>
+          <section class="col-sm-6">
+            <img src="resources/images/hybridgif5.jpg" alt="Hybrid Powertrain" id="gifimage">
+          </section>
+          <section class="col-sm-6">
+            <p> Stop - at a red light, for example. With only the electric motor active, a Hybrid system is silent and emits
+              no emissions. If the Hybrid battery is running low, the gas engine intuitively starts, generating the energy
+              required to replenish the battery. This is just one of the reasons that Hybrids are up to 70% cleaner than
+              gas burning engines and diesels. </p>
+          </section>
+        </section>
+      </section>
+      <!-- Hybrid working section end -->
+    </section>
+    <!-- About hybrid section end -->
+  </section>
+
+  <!-- Footer start -->
+  <footer>
+    <section class="row">
+      <section class="col-sm-12">
+        <h4> Follow Us </h4>
+      </section>
     </section>
 
-    <!-- Footer start -->
-    <footer>
-        <section class="row">
-            <section class="col-sm-12">
-                <h4> Follow Us </h4>
-            </section>
-        </section>
+    <section id="medialinks">
+      <span>
+        <img src="resources/images/fb.jpg" alt="Facebook" class="socialimg">
+      </span>
+      <span>
+        <img src="resources/images/insta.jpg" alt="Instagram" class="socialimg">
+      </span>
+      <span>
+        <img src="resources/images/yt.jpg" alt="Youtube" class="socialimg">
+      </span>
+      <span>
+        <img src="resources/images/gplus.jpg" alt="Google Plus" class="socialimg">
+      </span>
+      <span>
+        <img src="resources/images/twitter.jpg" alt="Twitter" class="socialimg">
+      </span>
+      <span>
+        <img src="resources/images/linkedin.png" alt="LinkedIn" class="socialimg">
+      </span>
+    </section>
 
-        <section class="row">
-            <section class="col-sm-2">
-                <img src="images/fb.jpg" alt="Facebook" class="socialimg">
-                <a href="#"> Hybrid FBOfficial </a>
-            </section>
+    <section class="row">
+      <section class="col-sm-12">
+        <span>
+          <a href="#"> Copyright &copy; 2018 </a>
+        </span>
+        <span>
+          <a href="#"> Privacy Policy </a>
+        </span>
+        <span>
+          <a href="#"> Cookies Policy </a>
+        </span>
+        <span>
+          <a href="#"> About Us </a>
+        </span>
+        <span>
+          <a href="#"> Help and Support </a>
+        </span>
+        <span>
+          <a href="#"> Careers </a>
+        </span>
+        <span>
+          <a href="#"> Contacts </a>
+        </span>
+        <span>
+          <a href="#"> Media </a>
+        </span>
+      </section>
+    </section>
+  </footer>
+  <!-- Footer end -->
 
-            <section class="col-sm-2">
-                <img src="images/insta.jpg" alt="Instagram" class="socialimg">
-                <a href="#"> Hybrid IGOfficial </a>
-            </section>
-
-            <section class="col-sm-2">
-                <img src="images/yt.jpg" alt="Youtube" class="socialimg">
-                <a href="#"> Hybrid YT </a>
-            </section>
-
-            <section class="col-sm-2">
-                <img src="images/gplus.jpg" alt="Google Plus" class="socialimg">
-                <a href="#"> Hybrid </a>
-            </section>
-
-            <section class="col-sm-2">
-                <img src="images/twitter.jpg" alt="Twitter" class="socialimg">
-                <a href="#"> Hybrid Official </a>
-            </section>
-
-            <section class="col-sm-2">
-                <img src="images/linkedin.png" alt="LinkedIn" class="socialimg">
-                <a href="#"> Hybrid </a>
-            </section>
-
-        </section>
-
-        <section class="row">
-            <section class="col-sm-12">
-                <h8>
-                    <a href="#"> Copyright &copy; 2018 </a> | </h8>
-                <h8>
-                    <a href="#"> Privacy Policy </a> | </h8>
-                <h8>
-                    <a href="#"> Cookies Policy </a> | </h8>
-                <h8>
-                    <a href="#"> About Us </a> | </h8>
-                <h8>
-                    <a href="#"> Help and Support </a> | </h8>
-                <h8>
-                    <a href="#"> Careers </a> | </h8>
-                <h8>
-                    <a href="#"> Contacts </a> | </h8>
-                <h8>
-                    <a href="#"> Media </a> | </h8>
-            </section>
-        </section>
-    </footer>
-    <!-- Footer end -->
-
-<!-- Jquery script-->
-<script src="http://code.jquery.com/jquery.js"></script>
-<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-
+  <!-- Jquery script-->
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="vendor/js/jquery-1.8.2.min.js"><\/script>')</script>
+  <script src="vendor/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.sidebarBtn').click(function () {
+        $('.sidebar').toggleClass('active');
+        $('.sidebarBtn').toggleClass('toggle');
+      })
+    })
+  </script>
 
 </body>
 <!-- body end -->

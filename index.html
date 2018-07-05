@@ -4,469 +4,632 @@
 
 <!-- Defining Title of Webpage, mobile support, bootstrap, google fonts, linking html file to stylesheets -->
 <!-- head start -->
+
 <head>
-    <meta charset="utf-8" />
-    <!-- Title -->
-    <title> HYBRID | Homepage </title>
-    <!-- Mobile-device support -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="cssfolder/stylesheet.css" type="text/css">
-    <script src="includes/js/modernizr-2.6.2.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.sidebarBtn').click(function(){
-                $('.sidebar').toggleClass('active');
-                $('.sidebarBtn').toggleClass('toggle');
-            })
-        })
-    </script>
+  <meta charset="utf-8" />
+  <!-- Title -->
+  <title> HYBRID | Homepage </title>
+  <!-- Mobile-device support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- Bootstrap -->
+  <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/bootstrap-glyphicons.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="resources/css/stylesheet.css" type="text/css">
+  <script src="vendor/js/modernizr-2.6.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 </head>
 <!-- head end -->
 
 <!-- Defining the content of the Webpage (Homepage) -->
 <!-- Body start -->
+
 <body>
 
-    <!-- Main container start -->
-    <section class="container-fluid" id="main">
+  <!-- Main container start -->
+  <section class="container-fluid" id="main">
 
-        <!-- Navbar start -->
-        <nav class="navbar navbar-fixed-top">
+    <!-- Navbar start -->
+    <nav class="navbar navbar-fixed-top">
 
-            <!-- Button for collapsing search bar -->
-            <!-- <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse">
+      <!-- Button for collapsing search bar -->
+      <!-- <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse">
                 <span class="glyphicon glyphicon-search"></span>
             </button> -->
-            <!-- Button for collapsing search bar end -->
+      <!-- Button for collapsing search bar end -->
 
-            <!-- Navigation dropdown menu start -->
-            <nav class="sidebar">
-                <!-- List of items -->
-                <ul>
-                    <li>
-                        <div class="borderline"></div>
-                    </li>
-                    <li> 
-                        <a href="#" class="highlight"> <em>Home</em> </a>
-                        <div class="borderline"></div>
-                    </li>
-                    <li> 
-                        <a href="technology.html"> <em>Technology</em> </a>
-                        <div class="borderline"></div>
-                    </li>
-                    <li> 
-                        <a href="#"> <em>Vehicles</em> </a>
-                        <div class="borderline"></div>
-                    </li>
-                    <li> 
-                        <a href="#"> <em>Future</em> </a>
-                        <div class="borderline"></div>
-                    </li>
-                    <li> 
-                        <a href="#"> <em>Subscribe</em> </a>
-                        <div class="borderline"></div>
-                    </li>
-                </ul>
-                <!-- List end -->
-
-                <!-- Sidebar button start -->
-                <button class="sidebarBtn" class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse">
-                    <span></span>
-                </button>
-                <!-- Sidebar button end -->
-            </nav>
-            <!-- Navigation dropdown menu end -->
-
-            <!-- logo -->
-            <a class="navbar-brand" href="#"> 
-                <img src="images/logo2-cpy.JPG" id="logo" alt="Our Logo">
+      <!-- Navigation dropdown menu start -->
+      <nav class="sidebar">
+        <!-- List of items -->
+        <ul>
+          <li>
+            <div class="borderline"></div>
+          </li>
+          <li>
+            <a href="#" class="highlight">
+              <em>Home</em>
             </a>
-            <!-- logo end -->
+            <div class="borderline"></div>
+          </li>
+          <li>
+            <a href="technology.html">
+              <em>Technology</em>
+            </a>
+            <div class="borderline"></div>
+          </li>
+          <li>
+            <a href="#">
+              <em>Vehicles</em>
+            </a>
+            <div class="borderline"></div>
+          </li>
+          <li>
+            <a href="#">
+              <em>Future</em>
+            </a>
+            <div class="borderline"></div>
+          </li>
+          <li>
+            <a href="#">
+              <em>Subscribe</em>
+            </a>
+            <div class="borderline"></div>
+          </li>
+        </ul>
+        <!-- List end -->
 
-            <!-- Collapsing Search bar -->
-            <section class="nav-collapse collapse navbar-responsive-collapse" id="search">    
-                <form class="navbar-form"> 
-                    <input type="text" class="form-control" placeholder="Search" id="searchbar">
-                    <buttom type="submit" class="btn btn-default btn-mini"> <span class="glyphicon glyphicon-search"></span></buttom>
-                </form>
-            </section>
-            <!-- Collapsing Seacrch Bar end --> 
-                
-        </nav>
-        <!-- Navbar end -->
+        <!-- Sidebar button start -->
+        <button class="sidebarBtn" class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse">
+          <span></span>
+        </button>
+        <!-- Sidebar button end -->
+      </nav>
+      <!-- Navigation dropdown menu end -->
 
-        <!-- Main Carousel start -->
-        <section class="carousel slide" id="maincarousel">
+      <!-- logo -->
+      <a class="navbar-brand" href="#">
+        <img src="resources/images/logo2-cpy.JPG" id="logo" alt="Our Logo">
+      </a>
+      <!-- logo end -->
 
-            <!-- Indicators -->
-	        <ol class="carousel-indicators">
-                <li class="active" data-slide-to="0" data-target="#maincarousel"></li>
-                <li data-slide-to="1" data-target="#maincarousel"></li>
-                <li data-slide-to="2" data-target="#maincarousel"></li>
-            </ol>
-    
-            <!-- Wrapper for slides -->
-            <section class="carousel-inner">
-                <article class="item active" id="slide1">
-                    <article class="carousel-caption">
-                        <h4> <a href="#"><em>The Terzo Millenio</em></a> </h4>
-                        <p> <em>The latest Hybrid Hypercar Concept from Lamborghini</em> </p>
-                    </article><!-- carousel-caption end-->
-                </article><!-- item end-->
-            
-                <article class="item" id="slide2">
-                    <article class="carousel-caption">
-                        <h4> <a href="#">Take a look inside Porsche 918's Hybrid Powertrain System</a> </h4>
-                    </article><!-- carousel-caption end-->
-                </article><!-- item end -->
-            
-                <article class="item" id="slide3">
-                    <article class="carousel-caption">
-                        <h4> <a href="#">Lexus develops new Powertrain for its Hybrid Supercars</a> </h4>
-                    </article><!-- carousel-caption end -->
-                </article><!-- item end -->
-            </section><!-- carousel-inner end -->
-        
-            <!-- Controls -->
-            <a class="left carousel-control" data-slide="prev" href="#maincarousel"><span class="icon-prev"></span></a>
-            <a class="right carousel-control" data-slide="next" href="#maincarousel"><span class="icon-next"></span></a>
-    
-        </section>
-        <!-- Main Carousel end -->
+      <!-- Collapsing Search bar -->
+      <section class="nav-collapse collapse navbar-responsive-collapse" id="search">
+        <form class="navbar-form">
+          <input type="text" class="form-control" placeholder="Search" id="searchbar">
+          <buttom type="submit" class="btn btn-default btn-mini">
+            <span class="glyphicon glyphicon-search"></span>
+          </buttom>
+        </form>
+      </section>
+      <!-- Collapsing Seacrch Bar end -->
 
-        <!-- Three column article start -->
-        <!-- Article Heading -->
-        <section class="well">
-            <article class="row" id="featuresheading">
-                <!-- col-12 start -->
-                <article class="col-12">
-                    <h2 id="titlered"> <strong><em> The Holy Trinity </em></strong></h2>
-                    <p class="lead"> The three beasts which represent the pinnacle of Hybrid Technology are often collectively
-                            reffered to as "The Holy Trinity" of HyperCars. It’s almost impossible to talk about the one of them without comparing and contrasting with the other two. </p>
-                </article>
-                <!-- col-12 end -->
-            </article>
-            <!-- Article Heading end -->    
-                
-            <section class="row" id="features">
-                <section class="col-sm-4 feature">
-                    <section class="panel">
-                        <section class="panel-heading">
-                            <h3 class="panel-title"> <strong>Ferrari Laferrari</strong> </h3>
-                        </section><!-- panel-heading end -->
-                        <img src="images/lafpowerslide.gif" alt="Laferrari" class="img-circle">
-                        
-                        <p> The Ferrari Laferrari - The definitive Ferrari with 499 examples and 1 special edition around the world and a price tag of over One Million Dollars. </p>
-                        
-                        <a href="#" class="btn btn-secondary "> Read more </a>
-                    </section><!-- panel end -->
-                </section><!-- feature end -->
-                
-                <section class="col-sm-4 feature">
-                    <section class="panel">
-                        <section class="panel-heading">
-                            <h3 class="panel-title"> <strong> McLaren P1 </strong></h3>
-                        </section><!-- panel-heading end -->
-                        <img src="images/p1powerslide.gif" alt="McLaren P1" class="img-circle">
-                        
-                        <p> The ultimate expression of McLaren's engineering. A plug-in hybrid that will take you from 0 to 60 miles an hour before you can say swoosh! </p>
-                        
-                        <a href="#" class="btn btn-secondary "> Read more </a>
-                    </section><!-- panel end -->
-                </section><!-- feature end -->
-                
-                <section class="col-sm-4 feature">
-                    <section class="panel">
-                        <section class="panel-heading">
-                            <h3 class="panel-title"><strong> Porsche 918 </strong></h3>
-                        </section><!-- end panel-heading -->
-                        <img src="images/918powerslide.gif" alt="Porsche 918" class="img-circle">
-                        
-                        <p> The flagship Porsche - Lapping the Nurburgring Norsschleife in 6 minutes and 57 seconds, which was faster than any road legal production car then. </p>
-                        
-                        <a href="#" class="btn btn-secondary "> Read more </a>
-                    </section><!-- panel end -->
-                </section><!-- feature end -->
-            </section><!-- features end -->         
-        </section>
-        <!-- Three column article end -->
+    </nav>
+    <!-- Navbar end -->
 
-        <!-- Tab section start -->
-        <article class="row" id="tabssection">
-            <section class="col-sm-12"></section>
-            <h2> <strong><em> Famous <span id="titlered">Race Tracks</span> around the world </em></strong></h2>
-                <section class="tabbable">
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a href="#tab1" data-toggle="tab">Nurburging Nordschleife</a></li>
-                        <li><a href="#tab2" data-toggle="tab">Circuit de Spa-Francorchamps</a></li>
-                        <li><a href="#tab3" data-toggle="tab">Circuit de la Sarthe</a></li>
-                    </ul>
-                    <section class="tab-content">
-                        <section class="tab-pane active" id="tab1">
-                            <section class="row">
-                                <section class="col-sm-6">
-                                    <h4><span class="glyphicon glyphicon-map-marker"></span> Location <small> Country : Germany </small></h4>
-                        
-                                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2553.235492176084!2d6.940473815727178!3d50.334098079459494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sn%C3%BCrburgring+embedded+google+map!5e1!3m2!1sen!2sin!4v1530648794966"></iframe>
-                                </section>
-                                <section class="col-sm-6" id="trackdata">
-                                    <h4>The world's most beautiful racetrack, also known as the Green Hell. </h4>
-                                    
-                                    <p>The Nürburgring is a 150,000 person capacity motorsports complex located in the town of Nürburg, Rhineland-Palatinate, Germany. It features a Grand Prix race track built in 1984, and a much longer old "North loop" track which was built in the 1920s around the village and medieval castle of Nürburg in the Eifel mountains. 
-                                    </p>
-                                    <p>
-                                    Several touring car series still compete on the Nordschleife, using either only the simple 20.8 km (12.9 mi) version with its separate small pit lane, or a combined 24.4 km (15.2 mi)-long track that uses a part of the original modern F1 track.
-                                    </p>
-                                </section>
-                            </section>
-                        </section>
-                        
-                        <section class="tab-pane" id="tab2">
-                            <section class="row">
-                                <section class="col-sm-6">
-                                    <h4><span class="glyphicon glyphicon-map-marker"></span> Location <small> Country : Belgium </small></h4>
-                        
-                                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.5085742805695!2d5.96986131573091!3d50.4369117794735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c07b5c0460f737%3A0x78105e8819c35c0e!2sCircuit+de+Spa-Francorchamps!5e1!3m2!1sen!2sin!4v1530648536808"></iframe>
-                                </section>
-                                <section class="col-sm-6" id="trackdata">
-                                    <h4> Venue of the Formula One Belgian Grand Prix and Spa 24 Hours endurance race.</h4>
-                                    <p>
-                                            Designed in 1920 by Jules de Thier and Henri Langlois Van Ophem, the original triangle-shaped course used public roads between the Belgian towns of Francorchamps, Malmedy, and Stavelot.
-                                    </p>
-                                    <p>
-                                            The most famous part of the circuit is the Eau Rouge / Raidillon combination. Having negotiated the La Source hairpin, drivers race down a straight to the point where the track crosses the Eau Rouge stream for the first time, before being launched steeply uphill into a sweeping left-right-left collection of corners with a blind summit. 
-                                    </p>
-                                </section>
-                            </section>
-                        </section>
+    <!-- Main Carousel start -->
+    <section class="carousel slide" id="maincarousel">
 
-                        <section class="tab-pane" id="tab3">
-                            <section class="row">
-                                <section class="col-sm-6">
-                                    <h4><span class="glyphicon glyphicon-map-marker"></span> Location <small> Country : France </small></h4>
-                        
-                                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d43041.31417008117!2d0.177291984639441!3d48.007459188944495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scircuit+de+le+sarta!5e1!3m2!1sen!2sin!4v1530648602386"></iframe>
-                                </section>
-                                <section class="col-sm-6" id="trackdata">
-                                    <h4> Home of the famous Bugatti Circuit. </h4>
-                                    <p> Comprising private, race-specific sections of track in addition to public roads which remain accessible most of the year, its present configuration is 13.626 kilometres (8.467 mi) long, making it one of the longest circuits in the world.</p>
-                                    <p>
-                                    Several touring car series still compete on the Nordschleife, using either only the simple 20.8 km (12.9 mi) version with its separate small pit lane, or a combined 24.4 km (15.2 mi)-long track that uses a part of the original modern F1 track.
-                                    </p>
-                                </section>
-                            </section>
-                        </section>
-                    </section>
-                    <!-- tab-content end -->
-                </section>
-                <!-- tabbable end -->
-            </section> 
-            <!-- col-sm-12 end -->
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li class="active" data-slide-to="0" data-target="#maincarousel"></li>
+        <li data-slide-to="1" data-target="#maincarousel"></li>
+        <li data-slide-to="2" data-target="#maincarousel"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <section class="carousel-inner">
+        <article class="item active" id="slide1">
+          <article class="carousel-caption">
+            <h4>
+              <a href="#">
+                <em>The Terzo Millenio</em>
+              </a>
+            </h4>
+            <p>
+              <em>The latest Hybrid Hypercar Concept from Lamborghini</em>
+            </p>
+          </article>
+          <!-- carousel-caption end-->
         </article>
-        <!-- Row end -->
+        <!-- item end-->
 
-        <!-- Top 5 article start -->
-        <article class="well" id="topfive">
-            <!-- Title and description -->
-            <section class="row">
-                <section class="col-sm-12" id="topfivehead">
-                    <h2> <strong><em> <span id="titlered">Top 5</span> : Most Fuel Efficient Hybrids </em></strong></h2>
-                    <p> Find out which Hybrid cars give the most miles per gallon. </p>
-                </section>
-            </section>
-
-            <!-- Entry 1 -->
-            <section class="row">
-                <section class="col-sm-4">
-                    <a href="#"><img src="images/camry.jpg" alt="Toyota Camry"></a></li>
-                </section>
-                <section class="col-sm-8">
-                    <h4><strong>Toyota Camry</strong></h4>
-                    <p> Toyota's fully redesigned Camry Hybrid offers Prius-like fuel economy, sporty looks, and a better (more fun) drive experience. </p>
-                    <p> Combined Fuel Economy: 21.7 kmpl </p>
-                    <p> Body Type: Sedan </p>
-                </section>
-            </section>
-            <!-- Entry 1 end -->
-
-            <!-- Entry 2 -->
-            <section class="row">
-                <section class="col-sm-4">
-                    <a href="#"><img src="images/niro.jpg" alt="Kia Niro"></a></li>
-                </section>
-                <section class="col-sm-8">
-                    <h4><strong>Kia Niro</strong></h4>
-                    <p>As Kia’s first dedicated hybrid, the Niro blends very good fuel economy, sporty intentions, and crossover styling.</p>
-                    <p> Combined Fuel Economy: 21.3 kmpl </p>
-                    <p> Body Type: SUV / Crossover </p>
-                </section>
-            </section>
-            <!-- Entry 2 end -->
-
-            <!-- Entry 3 -->
-            <section class="row">
-                <section class="col-sm-4">
-                    <a href="#"><img src="images/accord.jpg" alt="Honda Accord"></a></li>
-                </section>
-                <section class="col-sm-8">
-                    <h4><strong>Honda Accord</strong></h4>
-                    <p>Honda's revised full hybrid Accord sets a new benchmark in fuel efficiency, power, and technology among mid-sized hybrid sedans. </p>
-                    <p> Combined Fuel Economy: 20.4 kmpl </p>
-                    <p> Body Type: Sedan </p>
-                </section>
-            </section>
-            <!-- Entry 3 end -->
-            
-            <!-- Entry 4 -->
-            <section class="row">
-                <section class="col-sm-4">
-                    <a href="#"><img src="images/optima.jpg" alt="Kia Optima"></a>
-                </section>
-                <section class="col-sm-8">
-                    <h4><strong>Kia Optima</strong></h4>
-                    <p>The all-new 2017 Kia Optima Hybrid improves efficiency and presents a unique alternative with six-speed auto transmission.</p>
-                    <p> Combined Fuel Economy: 17.9 kmpl </p>
-                    <p> Body Type: Sedan </p>
-                </section>
-            </section>
-            <!-- Entry 4 end -->
-
-            <!-- Entry 5 -->
-            <section class="row">
-                <section class="col-sm-4">
-                    <a href="#"><img src="images/fusion.jpg" alt="Ford Fusion"></a>
-                </section>
-                <section class="col-sm-8">
-                    <h4><strong>Ford Fusion</strong></h4>
-                    <p>Refreshed for 2017, the Fusion Hybrid nets higher mpg, and brings a fresh new look to the market.</p>
-                    <p> Combined Fuel Economy: 17.9 kmpl </p>
-                    <p> Body Type: Sedan </p>
-                </section>
-            </section>
-            <!-- Entry 5 end -->
-
-            <!-- Read more button -->
-            <button type="button" class="btn btn-default"> Read More </button>
-
+        <article class="item" id="slide2">
+          <article class="carousel-caption">
+            <h4>
+              <a href="#">Take a look inside Porsche 918's Hybrid Powertrain System</a>
+            </h4>
+          </article>
+          <!-- carousel-caption end-->
         </article>
-        <!-- Top 5 Article end -->
+        <!-- item end -->
 
-        <!-- Browse content section start -->
-        <section class="row" id="browsecontent">
-            <section class="col-sm-12">
-                <h2>
-                    <strong><em> Browse <span id="titlered">Hybrid</span> Cars </em></strong>
-                </h2>
-                <p> See Reviews, Specifications, Photos and Inventory on Hybrid Cars of your favourite make. </p>
-            </section>
-            <section class="col-sm-3">
-                <ul>
-                    <li><a href="#"> ACURA </a></li>
-                    <li><a href="#"> AUDI </a></li>
-                    <li><a href="#"> BMW </a></li>
-                    <li><a href="#"> CHEVROLET </a></li>
-                </ul>
-            </section>
-            <section class="col-sm-3">
-                <ul>
-                    <li><a href="#"> FORD </a></li>
-                    <li><a href="#"> HONDA </a></li>
-                    <li><a href="#"> HYUNDAI </a></li>
-                    <li><a href="#"> LEXUS </a></li>
-                </ul>
-            </section>
-            <section class="col-sm-3">
-                <ul>
-                    <li><a href="#"> MERCEDES </a></li>
-                    <li><a href="#"> MITSUBISHI </a></li>
-                    <li><a href="#"> MINI </a></li>
-                    <li><a href="#"> MCLAREN </a></li>
-                </ul>
-            </section>
-            <section class="col-sm-3">
-                <ul>
-                    <li><a href="#"> NISSAN </a></li>
-                    <li><a href="#"> PORSCHE </a></li>
-                    <li><a href="#"> TOYOYA </a></li>
-                    <li><a href="#"> VOLVO </a></li>
-                </ul>
-                </section>
-            </section>
-            <!-- Browse content section end -->
+        <article class="item" id="slide3">
+          <article class="carousel-caption">
+            <h4>
+              <a href="#">Lexus develops new Powertrain for its Hybrid Supercars</a>
+            </h4>
+          </article>
+          <!-- carousel-caption end -->
+        </article>
+        <!-- item end -->
+      </section>
+      <!-- carousel-inner end -->
+
+      <!-- Controls -->
+      <a class="left carousel-control" data-slide="prev" href="#maincarousel">
+        <span class="icon-prev"></span>
+      </a>
+      <a class="right carousel-control" data-slide="next" href="#maincarousel">
+        <span class="icon-next"></span>
+      </a>
 
     </section>
-    <!-- Main container end -->
+    <!-- Main Carousel end -->
 
-    <!-- Footer start -->
-    <footer>
-        <section class="row">
-            <section class="col-sm-12">
-                <h4> Follow Us </h4>
+    <!-- Three column article start -->
+    <!-- Article Heading -->
+    <section class="well">
+      <article class="row" id="featuresheading">
+        <!-- col-12 start -->
+        <article class="col-12">
+          <h2 id="titlered">
+            <strong>
+              <em> The Holy Trinity </em>
+            </strong>
+          </h2>
+          <p class="lead"> The three beasts which represent the pinnacle of Hybrid Technology are often collectively reffered to as "The Holy
+            Trinity" of HyperCars. It’s almost impossible to talk about the one of them without comparing and contrasting
+            with the other two. </p>
+        </article>
+        <!-- col-12 end -->
+      </article>
+      <!-- Article Heading end -->
+
+      <section class="row" id="features">
+        <section class="col-sm-4 feature">
+          <section class="panel">
+            <section class="panel-heading">
+              <h3 class="panel-title">
+                <strong>Ferrari Laferrari</strong>
+              </h3>
             </section>
+            <!-- panel-heading end -->
+            <img src="resources/images/lafpowerslide.gif" alt="Laferrari" class="img-circle">
+
+            <p> The Ferrari Laferrari - The definitive Ferrari with 499 examples and 1 special edition around the world and a
+              price tag of over One Million Dollars. </p>
+
+            <a href="#" class="btn btn-secondary "> Read more </a>
+          </section>
+          <!-- panel end -->
         </section>
+        <!-- feature end -->
 
-        <section class="row">
-            <section class="col-sm-2">
-                <img src="images/fb.jpg" alt="Facebook" class="socialimg">
-                <a href="#"> Hybrid FBOfficial </a>
+        <section class="col-sm-4 feature">
+          <section class="panel">
+            <section class="panel-heading">
+              <h3 class="panel-title">
+                <strong> McLaren P1 </strong>
+              </h3>
             </section>
+            <!-- panel-heading end -->
+            <img src="resources/images/p1powerslide.gif" alt="McLaren P1" class="img-circle">
 
-            <section class="col-sm-2">
-                <img src="images/insta.jpg" alt="Instagram" class="socialimg">
-                <a href="#"> Hybrid IGOfficial </a>
-            </section>
+            <p> The ultimate expression of McLaren's engineering. A plug-in hybrid that will take you from 0 to 60 miles an hour
+              before you can say swoosh! </p>
 
-            <section class="col-sm-2">
-                <img src="images/yt.jpg" alt="Youtube" class="socialimg">
-                <a href="#"> Hybrid YT </a>
-            </section>
-
-            <section class="col-sm-2">
-                <img src="images/gplus.jpg" alt="Google Plus" class="socialimg">
-                <a href="#"> Hybrid </a>
-            </section>
-
-            <section class="col-sm-2">
-                <img src="images/twitter.jpg" alt="Twitter" class="socialimg">
-                <a href="#"> Hybrid Official </a>
-            </section>        
-
-            <section class="col-sm-2">
-                <img src="images/linkedin.png" alt="LinkedIn" class="socialimg">
-                <a href="#"> Hybrid </a>
-            </section>
-
+            <a href="#" class="btn btn-secondary "> Read more </a>
+          </section>
+          <!-- panel end -->
         </section>
-        
-        <section class="row">
-            <section class="col-sm-12">
-                <h8> <a href="#"> Copyright &copy; 2018 </a> | </h8>
-                <h8> <a href="#"> Privacy Policy </a> | </h8>
-                <h8> <a href="#"> Cookies Policy </a> | </h8>
-                <h8> <a href="#"> About Us </a> | </h8>
-                <h8> <a href="#"> Help and Support </a> | </h8>
-                <h8> <a href="#"> Careers </a> | </h8>
-                <h8> <a href="#"> Contacts </a> | </h8>
-                <h8> <a href="#"> Media </a> | </h8>
-            </section>
-        </section>
-    </footer>
-    <!-- Footer end -->
+        <!-- feature end -->
 
-<!-- Jquery script-->
-<script src="http://code.jquery.com/jquery.js"></script>
-<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+        <section class="col-sm-4 feature">
+          <section class="panel">
+            <section class="panel-heading">
+              <h3 class="panel-title">
+                <strong> Porsche 918 </strong>
+              </h3>
+            </section>
+            <!-- end panel-heading -->
+            <img src="resources/images/918powerslide.gif" alt="Porsche 918" class="img-circle">
+
+            <p> The flagship Porsche - Lapping the Nurburgring Norsschleife in 6 minutes and 57 seconds, which was faster than
+              any road legal production car then. </p>
+
+            <a href="#" class="btn btn-secondary "> Read more </a>
+          </section>
+          <!-- panel end -->
+        </section>
+        <!-- feature end -->
+      </section>
+      <!-- features end -->
+    </section>
+    <!-- Three column article end -->
+
+    <!-- Tab section start -->
+    <article class="row" id="tabssection">
+      <section class="col-sm-12"></section>
+      <h2>
+        <strong>
+          <em> Famous
+            <span id="titlered">Race Tracks</span> around the world </em>
+        </strong>
+      </h2>
+      <section class="tabbable">
+        <ul class="nav nav-tabs">
+          <li class="active">
+            <a href="#tab1" data-toggle="tab">Nurburging Nordschleife</a>
+          </li>
+          <li>
+            <a href="#tab2" data-toggle="tab">Circuit de Spa-Francorchamps</a>
+          </li>
+          <li>
+            <a href="#tab3" data-toggle="tab">Circuit de la Sarthe</a>
+          </li>
+        </ul>
+        <section class="tab-content">
+          <section class="tab-pane active" id="tab1">
+            <section class="row">
+              <section class="col-sm-6">
+                <h4>
+                  <span class="glyphicon glyphicon-map-marker"></span> Location
+                  <small> Country : Germany </small>
+                </h4>
+
+                <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2553.235492176084!2d6.940473815727178!3d50.334098079459494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sn%C3%BCrburgring+embedded+google+map!5e1!3m2!1sen!2sin!4v1530648794966"></iframe>
+              </section>
+              <section class="col-sm-6" id="trackdata">
+                <h4>The world's most beautiful racetrack, also known as the Green Hell. </h4>
+
+                <p>The Nürburgring is a 150,000 person capacity motorsports complex located in the town of Nürburg, Rhineland-Palatinate,
+                  Germany. It features a Grand Prix race track built in 1984, and a much longer old "North loop" track which
+                  was built in the 1920s around the village and medieval castle of Nürburg in the Eifel mountains.
+                </p>
+                <p>
+                  Several touring car series still compete on the Nordschleife, using either only the simple 20.8 km (12.9 mi) version with
+                  its separate small pit lane, or a combined 24.4 km (15.2 mi)-long track that uses a part of the original
+                  modern F1 track.
+                </p>
+              </section>
+            </section>
+          </section>
+
+          <section class="tab-pane" id="tab2">
+            <section class="row">
+              <section class="col-sm-6">
+                <h4>
+                  <span class="glyphicon glyphicon-map-marker"></span> Location
+                  <small> Country : Belgium </small>
+                </h4>
+
+                <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.5085742805695!2d5.96986131573091!3d50.4369117794735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c07b5c0460f737%3A0x78105e8819c35c0e!2sCircuit+de+Spa-Francorchamps!5e1!3m2!1sen!2sin!4v1530648536808"></iframe>
+              </section>
+              <section class="col-sm-6" id="trackdata">
+                <h4> Venue of the Formula One Belgian Grand Prix and Spa 24 Hours endurance race.</h4>
+                <p>
+                  Designed in 1920 by Jules de Thier and Henri Langlois Van Ophem, the original triangle-shaped course used public roads between
+                  the Belgian towns of Francorchamps, Malmedy, and Stavelot.
+                </p>
+                <p>
+                  The most famous part of the circuit is the Eau Rouge / Raidillon combination. Having negotiated the La Source hairpin, drivers
+                  race down a straight to the point where the track crosses the Eau Rouge stream for the first time, before
+                  being launched steeply uphill into a sweeping left-right-left collection of corners with a blind summit.
+                </p>
+              </section>
+            </section>
+          </section>
+
+          <section class="tab-pane" id="tab3">
+            <section class="row">
+              <section class="col-sm-6">
+                <h4>
+                  <span class="glyphicon glyphicon-map-marker"></span> Location
+                  <small> Country : France </small>
+                </h4>
+
+                <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d43041.31417008117!2d0.177291984639441!3d48.007459188944495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scircuit+de+le+sarta!5e1!3m2!1sen!2sin!4v1530648602386"></iframe>
+              </section>
+              <section class="col-sm-6" id="trackdata">
+                <h4> Home of the famous Bugatti Circuit. </h4>
+                <p> Comprising private, race-specific sections of track in addition to public roads which remain accessible most
+                  of the year, its present configuration is 13.626 kilometres (8.467 mi) long, making it one of the longest
+                  circuits in the world.</p>
+                <p>
+                  Several touring car series still compete on the Nordschleife, using either only the simple 20.8 km (12.9 mi) version with
+                  its separate small pit lane, or a combined 24.4 km (15.2 mi)-long track that uses a part of the original
+                  modern F1 track.
+                </p>
+              </section>
+            </section>
+          </section>
+        </section>
+        <!-- tab-content end -->
+      </section>
+      <!-- tabbable end -->
+  </section>
+  <!-- col-sm-12 end -->
+  </article>
+  <!-- Row end -->
+
+  <!-- Top 5 article start -->
+  <article class="well" id="topfive">
+    <!-- Title and description -->
+    <section class="row">
+      <section class="col-sm-12" id="topfivehead">
+        <h2>
+          <strong>
+            <em>
+              <span id="titlered">Top 5</span> : Most Fuel Efficient Hybrids </em>
+          </strong>
+        </h2>
+        <p> Find out which Hybrid cars give the most miles per gallon. </p>
+      </section>
+    </section>
+
+    <!-- Entry 1 -->
+    <section class="row">
+      <section class="col-sm-4">
+        <a href="#">
+          <img src="resources/images/camry.jpg" alt="Toyota Camry">
+        </a>
+        </li>
+      </section>
+      <section class="col-sm-8">
+        <h4>
+          <strong>Toyota Camry</strong>
+        </h4>
+        <p> Toyota's fully redesigned Camry Hybrid offers Prius-like fuel economy, sporty looks, and a better (more fun) drive
+          experience. </p>
+        <p> Combined Fuel Economy: 21.7 kmpl </p>
+        <p> Body Type: Sedan </p>
+      </section>
+    </section>
+    <!-- Entry 1 end -->
+
+    <!-- Entry 2 -->
+    <section class="row">
+      <section class="col-sm-4">
+        <a href="#">
+          <img src="resources/images/niro.jpg" alt="Kia Niro">
+        </a>
+        </li>
+      </section>
+      <section class="col-sm-8">
+        <h4>
+          <strong>Kia Niro</strong>
+        </h4>
+        <p>As Kia’s first dedicated hybrid, the Niro blends very good fuel economy, sporty intentions, and crossover styling.
+        </p>
+        <p> Combined Fuel Economy: 21.3 kmpl </p>
+        <p> Body Type: SUV / Crossover </p>
+      </section>
+    </section>
+    <!-- Entry 2 end -->
+
+    <!-- Entry 3 -->
+    <section class="row">
+      <section class="col-sm-4">
+        <a href="#">
+          <img src="resources/images/accord.jpg" alt="Honda Accord">
+        </a>
+        </li>
+      </section>
+      <section class="col-sm-8">
+        <h4>
+          <strong>Honda Accord</strong>
+        </h4>
+        <p>Honda's revised full hybrid Accord sets a new benchmark in fuel efficiency, power, and technology among mid-sized
+          hybrid sedans. </p>
+        <p> Combined Fuel Economy: 20.4 kmpl </p>
+        <p> Body Type: Sedan </p>
+      </section>
+    </section>
+    <!-- Entry 3 end -->
+
+    <!-- Entry 4 -->
+    <section class="row">
+      <section class="col-sm-4">
+        <a href="#">
+          <img src="resources/images/optima.jpg" alt="Kia Optima">
+        </a>
+      </section>
+      <section class="col-sm-8">
+        <h4>
+          <strong>Kia Optima</strong>
+        </h4>
+        <p>The all-new 2017 Kia Optima Hybrid improves efficiency and presents a unique alternative with six-speed auto transmission.
+        </p>
+        <p> Combined Fuel Economy: 17.9 kmpl </p>
+        <p> Body Type: Sedan </p>
+      </section>
+    </section>
+    <!-- Entry 4 end -->
+
+    <!-- Entry 5 -->
+    <section class="row">
+      <section class="col-sm-4">
+        <a href="#">
+          <img src="resources/images/fusion.jpg" alt="Ford Fusion">
+        </a>
+      </section>
+      <section class="col-sm-8">
+        <h4>
+          <strong>Ford Fusion</strong>
+        </h4>
+        <p>Refreshed for 2017, the Fusion Hybrid nets higher mpg, and brings a fresh new look to the market.</p>
+        <p> Combined Fuel Economy: 17.9 kmpl </p>
+        <p> Body Type: Sedan </p>
+      </section>
+    </section>
+    <!-- Entry 5 end -->
+
+    <!-- Read more button -->
+    <section id="rdmore">
+      <button type="button" class="btn btn-default"> Read More </button>
+    </section>
+  </article>
+  <!-- Top 5 Article end -->
+
+  <!-- Browse content section start -->
+  <section class="row" id="browsecontent">
+    <section class="col-sm-12">
+      <h2>
+        <strong>
+          <em> Browse
+            <span id="titlered">Hybrid</span> Cars </em>
+        </strong>
+      </h2>
+      <p> See Reviews, Specifications, Photos and Inventory on Hybrid Cars of your favourite make. </p>
+    </section>
+    <section class="col-sm-3">
+      <ul>
+        <li>
+          <a href="#"> ACURA </a>
+        </li>
+        <li>
+          <a href="#"> AUDI </a>
+        </li>
+        <li>
+          <a href="#"> BMW </a>
+        </li>
+        <li>
+          <a href="#"> CHEVROLET </a>
+        </li>
+      </ul>
+    </section>
+    <section class="col-sm-3">
+      <ul>
+        <li>
+          <a href="#"> FORD </a>
+        </li>
+        <li>
+          <a href="#"> HONDA </a>
+        </li>
+        <li>
+          <a href="#"> HYUNDAI </a>
+        </li>
+        <li>
+          <a href="#"> LEXUS </a>
+        </li>
+      </ul>
+    </section>
+    <section class="col-sm-3">
+      <ul>
+        <li>
+          <a href="#"> MERCEDES </a>
+        </li>
+        <li>
+          <a href="#"> MITSUBISHI </a>
+        </li>
+        <li>
+          <a href="#"> MINI </a>
+        </li>
+        <li>
+          <a href="#"> MCLAREN </a>
+        </li>
+      </ul>
+    </section>
+    <section class="col-sm-3">
+      <ul>
+        <li>
+          <a href="#"> NISSAN </a>
+        </li>
+        <li>
+          <a href="#"> PORSCHE </a>
+        </li>
+        <li>
+          <a href="#"> TOYOYA </a>
+        </li>
+        <li>
+          <a href="#"> VOLVO </a>
+        </li>
+      </ul>
+    </section>
+  </section>
+  <!-- Browse content section end -->
+
+  </section>
+  <!-- Main container end -->
+
+  <!-- Footer start -->
+  <footer>
+    <section class="row">
+      <section class="col-sm-12">
+        <h4> Follow Us </h4>
+      </section>
+    </section>
+
+    <section id="medialinks">
+      <span>
+        <img src="resources/images/fb.jpg" alt="Facebook" class="socialimg">
+      </span>
+      <span>
+        <img src="resources/images/insta.jpg" alt="Instagram" class="socialimg">
+      </span>
+      <span>
+        <img src="resources/images/yt.jpg" alt="Youtube" class="socialimg">
+      </span>
+      <span>
+        <img src="resources/images/gplus.jpg" alt="Google Plus" class="socialimg">
+      </span>
+      <span>
+        <img src="resources/images/twitter.jpg" alt="Twitter" class="socialimg">
+      </span>
+      <span>
+        <img src="resources/images/linkedin.png" alt="LinkedIn" class="socialimg">
+      </span>
+    </section>
+
+    <section class="row" id="footerlinks">
+      <section class="col-sm-12">
+        <span>
+          <a href="#"> Copyright &copy; 2018 </a>
+        </span>
+        <span>
+          <a href="#"> Privacy Policy </a>
+        </span>
+        <span>
+          <a href="#"> Cookies Policy </a>
+        </span>
+        <span>
+          <a href="#"> About Us </a>
+        </span>
+        <span>
+          <a href="#"> Help and Support </a>
+        </span>
+        <span>
+          <a href="#"> Careers </a>
+        </span>
+        <span>
+          <a href="#"> Contacts </a>
+        </span>
+        <span>
+          <a href="#"> Media </a>
+        </span>
+      </section>
+    </section>
+  </footer>
+  <!-- Footer end -->
+
+  <!-- Jquery script-->
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="vendor/js/jquery-1.8.2.min.js"><\/script>')</script>
+  <script src="vendor/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.sidebarBtn').click(function () {
+        $('.sidebar').toggleClass('active');
+        $('.sidebarBtn').toggleClass('toggle');
+      })
+    })
+  </script>
 
 
 </body>
 <!-- body end -->
+
 </html>
 <!-- html end -->
